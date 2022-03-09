@@ -953,22 +953,20 @@ body::after {
 }
 
 .no-webp .title{
-  background-image: url(img/bg-text.png); }
+  background-image: url(../img/bg-text.png); }
 
 .title {
-  line-height: 1;
-  font-weight: 900;
   line-height: 1.21875;
   text-transform: uppercase;
   text-align: center;
-  background-clip: text;
+  font-weight: 900;
+  color: #fff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: #fff;
+  background-clip: text;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-x: 50%;
-  background-position-y: 0;
+  background-position: top;
 }
 
 @supports (font-size: clamp( 3.75rem , 0.9rem  +  14.25vw , 18rem )) {
@@ -4866,7 +4864,7 @@ body::after {
   }
 }
 
-.webp .title{ background-image: url(img/bg-text.webp); }
+.webp .title{ background-image: url(../img/bg-text.webp); }
 
 .webp .hero{ background: url(../img/hero-bg.webp) no-repeat 50% 50%/cover; }
 
