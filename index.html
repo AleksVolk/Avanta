@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220306120726">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220308203504">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,53 +23,55 @@
 					</picture>
 				</a>
 				<div class="header__menu menu">
-					<nav class="menu__body">
-						<ul class="menu__list">
-							<li class="menu__item menu__item_phone">
-								<a href="" class="menu__link" data-popup=".popup-call">
-									<svg>
-										<use href="img/icons/icons.svg#svg-phone-mb"></use>
-									</svg>
-									Заказать звонок
-								</a>
-							</li>
-							<li class="menu__item"><a href="" class="menu__link">Тренажерный зал</a></li>
-							<li class="menu__item"><a href="" class="menu__link">Наша команда</a></li>
-							<li class="menu__item"><a href="" class="menu__link">Браслеты</a></li>
-							<li class="menu__item"><a href="" class="menu__link">О компании</a></li>
-						</ul>
-						<p class="menu__text">Набережные Челны, ул. Советская 17</p>
-						<ul class="menu__social social">
-							<li class="social__item">
-								<a href="" class="social__link">
-									<svg>
-										<use href="img/icons/icons.svg#svg-vk"></use>
-									</svg>
-								</a>
-							</li>
-							<li class="social__item">
-								<a href="" class="social__link">
-									<svg>
-										<use href="img/icons/icons.svg#svg-fb"></use>
-									</svg>
-								</a>
-							</li>
-							<li class="social__item">
-								<a href="" class="social__link">
-									<svg>
-										<use href="img/icons/icons.svg#svg-inst"></use>
-									</svg>
-								</a>
-							</li>
-							<li class="social__item">
-								<a href="" class="social__link">
-									<svg>
-										<use href="img/icons/icons.svg#svg-youtube"></use>
-									</svg>
-								</a>
-							</li>
-						</ul>
-					</nav>
+					<div class="menu__inner">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item menu__item_phone">
+									<a href="" class="menu__link" data-popup=".popup-call">
+										<svg>
+											<use href="img/icons/icons.svg#svg-phone-mb"></use>
+										</svg>
+										Заказать звонок
+									</a>
+								</li>
+								<li class="menu__item"><a href="" class="menu__link">Тренажерный зал</a></li>
+								<li class="menu__item"><a href="" class="menu__link">Наша команда</a></li>
+								<li class="menu__item"><a href="" class="menu__link">Браслеты</a></li>
+								<li class="menu__item"><a href="" class="menu__link">О компании</a></li>
+							</ul>
+							<p class="menu__text">Набережные Челны, ул. Советская 17</p>
+							<ul class="menu__social social">
+								<li class="social__item">
+									<a href="" class="social__link">
+										<svg>
+											<use href="img/icons/icons.svg#svg-vk"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="social__item">
+									<a href="" class="social__link">
+										<svg>
+											<use href="img/icons/icons.svg#svg-fb"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="social__item">
+									<a href="" class="social__link">
+										<svg>
+											<use href="img/icons/icons.svg#svg-inst"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="social__item">
+									<a href="" class="social__link">
+										<svg>
+											<use href="img/icons/icons.svg#svg-youtube"></use>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
 				</div>
 				<div class="header__phone phone-header" data-da=".menu__body,991.98,2">
 					<a href="tel:88128449549" class="phone-header__call">
@@ -182,33 +184,41 @@
 								</div>
 							</div>
 							<ul class="gym__items">
-								<li class="gym__item primary-item primary-item_matrix primary-item_mb gym__item_1" data-watch data-watch-once>
-									<picture><source data-srcset="img/matrix.webp" type="image/webp"><img data-src="img/matrix.png" alt="" class="primary-item__image"></picture>
-									<p class="primary-item__text">
-										Современное оборудование от Matrix – глобальный бренд премиум класса
-									</p>
+								<li class="gym__block gym__block_mb" data-watch data-watch-once>
+									<div class="gym__item gym__item_1 primary-item primary-item_matrix">
+										<picture><source data-srcset="img/matrix.webp" type="image/webp"><img data-src="img/matrix.png" alt="" class="primary-item__image"></picture>
+										<p class="primary-item__text">
+											Современное оборудование от Matrix – глобальный бренд премиум класса
+										</p>
+									</div>
 								</li>
-								<li class="gym__item primary-item gym__item_2" data-watch data-watch-once>
-									<div class="primary-item__value">15</div>
-									<p class="primary-item__text">
-										едениц Блочных тренажеров
-									</p>
+								<li class="gym__block" data-watch data-watch-once>
+									<div class="gym__item gym__item_2 primary-item">
+										<div class="primary-item__value">15</div>
+										<p class="primary-item__text">
+											едениц Блочных тренажеров
+										</p>
+									</div>
 								</li>
-								<li class="gym__item primary-item gym__item_3" data-watch data-watch-once>
-									<div class="primary-item__value">15</div>
-									<p class="primary-item__text">
-										едениц Свободные веса
-									</p>
+								<li class="gym__block" data-watch data-watch-once>
+									<div class="gym__item gym__item_3 primary-item">
+										<div class="primary-item__value">15</div>
+										<p class="primary-item__text">
+											едениц Свободные веса
+										</p>
+									</div>
 								</li>
-								<li class="gym__item primary-item primary-item_mb gym__item_4" data-watch data-watch-once>
-									<div class="primary-item__value">600 <sup>м2</sup></div>
-									<p class="primary-item__text">
-										площадь тренажерного зала
-									</p>
+								<li class="gym__block gym__block_mb" data-watch data-watch-once>
+									<div class="gym__item gym__item_4 primary-item">
+										<div class="primary-item__value">600 <sup>м2</sup></div>
+										<p class="primary-item__text">
+											площадь тренажерного зала
+										</p>
+									</div>
 								</li>
 							</ul>
 							<div class="gym__image" data-watch data-watch-threshold="0.7" data-watch-once>
-								<picture><source data-srcset="img/girl.webp" type="image/webp"><img data-src="img/girl.png" alt=""></picture>
+								<picture><source srcset="img/girl.webp" type="image/webp"><img src="img/girl.png" alt=""></picture>
 							</div>
 						</div>
 					</div>
@@ -263,21 +273,25 @@
 								состоящая в основном из гимнастики (упражнения с весом
 								собственного тела) и тяжёлой атлетики.
 							</p>
-							<div class="crossfit__image" data-watch data-watch-once data-watch-margin="100%">
+							<div class="crossfit__image" data-watch data-watch-once data-watch-threshold="0.4">
 								<picture><source data-srcset="img/crossfit.webp" type="image/webp"><img data-src="img/crossfit.png" alt=""></picture>
 							</div>
 							<ul class="crossfit__items">
-								<li class="crossfit__item primary-item crossfit__item_1" data-watch data-watch-once>
-									<div class="primary-item__value">200 <sup>м2</sup></div>
-									<p class="primary-item__text">
-										Площадь Crossfit зала
-									</p>
+								<li class="crossfit__block" data-watch data-watch-once>
+									<div class="crossfit__item primary-item crossfit__item_1">
+										<div class="primary-item__value">200 <sup>м2</sup></div>
+										<p class="primary-item__text">
+											Площадь Crossfit зала
+										</p>
+									</div>
 								</li>
-								<li class="crossfit__item primary-item crossfit__item_2" data-watch data-watch-once>
-									<div class="primary-item__value">4,5 <sup>м</sup></div>
-									<p class="primary-item__text">
-										Высота потолка в зале
-									</p>
+								<li class="crossfit__block" data-watch data-watch-once>
+									<div class="crossfit__item primary-item crossfit__item_2">
+										<div class="primary-item__value">4,5 <sup>м</sup></div>
+										<p class="primary-item__text">
+											Высота потолка в зале
+										</p>
+									</div>
 								</li>
 							</ul>
 						</div>
@@ -391,34 +405,42 @@
 			</section>
 			<section class="bracelets">
 				<div class="bracelets__container">
-					<h2 class="bracelets__title main-title">Все услуги</h2>
+					<h2 class="bracelets__title main-title">Браслеты</h2>
 					<p class="bracelets__text main-text">Когда мечты становятся ближе.</p>
 					<div class="bracelets__body">
 						<ul class="bracelets__list">
-							<li class="bracelets__item item-bracelets item-bracelets_1" data-watch data-watch-once>
-								<div class="item-bracelets__title">3 месяца</div>
-								<p class="item-bracelets__text">Безлимитный 7500 р. </p>
+							<li class="bracelets__block" data-watch data-watch-once>
+								<div class="bracelets__item item-bracelets item-bracelets_1">
+									<div class="item-bracelets__title">3 месяца</div>
+									<p class="item-bracelets__text">Безлимитный 7500 р. </p>
+								</div>
 							</li>
-							<li class="bracelets__item item-bracelets item-bracelets_2" data-watch data-watch-once>
-								<div class="item-bracelets__title">6 месяцев</div>
-								<p class="item-bracelets__text">
-									Безлимитный 13 500 р.
-									<span class="item-bracelets__label">Со скидкой 20%</span>
-								</p>
-								<p class="item-bracelets__text">Дневной 12 000 р.</p>
-								<div class="item-bracelets__note">Возможна заморозка на 1 месяц</div>
+							<li class="bracelets__block" data-watch data-watch-once>
+								<div class="bracelets__item item-bracelets item-bracelets_2">
+									<div class="item-bracelets__title">6 месяцев</div>
+									<p class="item-bracelets__text">
+										Безлимитный 13 500 р.
+										<span class="item-bracelets__label">Со скидкой 20%</span>
+									</p>
+									<p class="item-bracelets__text">Дневной 12 000 р.</p>
+									<div class="item-bracelets__note">Возможна заморозка на 1 месяц</div>
+								</div>
 							</li>
-							<li class="bracelets__item item-bracelets item-bracelets_3" data-watch data-watch-once>
-								<div class="item-bracelets__title">12 месяцев</div>
-								<p class="item-bracelets__text">
-									Безлимитный 22 000 р.
-									<span class="item-bracelets__label">Cо скидкой 30%</span>
-								</p>
-								<p class="item-bracelets__text">Дневной 20 000 р.</p>
-								<div class="item-bracelets__note">Возможна заморозка на 2 месяца</div>
+							<li class="bracelets__block" data-watch data-watch-once>
+								<div class="bracelets__item item-bracelets item-bracelets_3">
+									<div class="item-bracelets__title">12 месяцев</div>
+									<p class="item-bracelets__text">
+										Безлимитный 22 000 р.
+										<span class="item-bracelets__label">Cо скидкой 30%</span>
+									</p>
+									<p class="item-bracelets__text">Дневной 20 000 р.</p>
+									<div class="item-bracelets__note">Возможна заморозка на 2 месяца</div>
+								</div>
 							</li>
 						</ul>
-						<div class="bracelets__image" data-watch data-watch-once data-watch-threshold="0.2"><picture><source data-srcset="img/bracelet.webp" type="image/webp"><img data-src="img/bracelet.png" alt=""></picture></div>
+						<div class="bracelets__image" data-watch data-watch-once data-watch-threshold="0.2">
+							<picture><source data-srcset="img/bracelet.webp" type="image/webp"><img data-src="img/bracelet.png" alt=""></picture>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -826,7 +848,7 @@
 								</svg>
 							</a>
 						</div>
-						<button class="button info-footer__btn"><span>Заказать звонок</span></button>
+						<button class="button info-footer__btn" data-popup=".popup-call"><span>Заказать звонок</span></button>
 						<ul class="info-footer__social social">
 							<li class="social__item">
 								<a href="" class="social__link">
@@ -943,7 +965,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20220306120726"></script>
+	<script src="js/app.min.js?_v=20220308203504"></script>
 </body>
 
 </html>

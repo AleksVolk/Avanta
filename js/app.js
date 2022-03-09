@@ -7914,6 +7914,7 @@
                     const cardioVideo = targetElement.closest(".video-cardio");
                     cardioVideo.insertAdjacentHTML("afterbegin", `<iframe src="https://www.youtube.com/embed/Ef1m24MWL8E?autoplay=1&controls=0" allow="autoplay;"></iframe>`);
                 }
+                if (bodyLockStatus && !targetElement.closest(".menu__body")) menuClose();
             }
         };
         window["FLS"] = true;
