@@ -963,11 +963,12 @@ body::after {
   text-align: center;
   background-clip: text;
   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: 50%;
   background-position-y: 0;
-  color: transparent;
 }
 
 @supports (font-size: clamp( 3.75rem , 0.9rem  +  14.25vw , 18rem )) {
@@ -980,6 +981,10 @@ body::after {
   .title {
     font-size: calc(3.75rem + 14.25 * (100vw - 20rem) / 100);
   }
+}
+
+.title span {
+  -webkit-text-fill-color: #fff;
 }
 
 .title._watcher-view {
