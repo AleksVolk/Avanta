@@ -1629,6 +1629,7 @@ body::after {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+  max-height: 43.75rem;
 }
 
 .hero__thumbs {
