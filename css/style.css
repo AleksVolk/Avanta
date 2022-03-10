@@ -3315,7 +3315,7 @@ body::after {
 }
 
 .no-webp .visit__body{
-  background: url("../img/visit-bg.png") no-repeat 50% 50% #fece03; }
+  background: #fece03 url("../img/visit-bg.png") no-repeat 50% 50%/cover; }
 
 .visit__body {
   -webkit-transform: skew(-5deg);
@@ -3335,7 +3335,6 @@ body::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-size: cover;
 }
 
 .visit__title {
@@ -4877,6 +4876,6 @@ body::after {
 
 .webp .team{ background: url(../img/section-bg.webp) no-repeat 50% 50%/cover; }
 
-.webp .visit__body{ background: url(../img/visit-bg.webp) no-repeat 50% 50% #fece03; }
+.webp .visit__body{ background: #fece03 url(../img/visit-bg.webp) no-repeat 50% 50%/cover; }
 
 .webp .page__wrapper{ background: url(../img/main-bg.webp) no-repeat top/cover; }
